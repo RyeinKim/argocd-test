@@ -2,7 +2,7 @@ name: Build & Deploy to ArgoCD                         # 워크플로우 이름 
 
 on:                                                    # 트리거 조건 정의
   push:                                                # 푸시 이벤트 발생 시 실행
-    branches: [ 18/argocd-cicd ]                       # 18/argocd-cicd 브랜치에 푸시될 때만 실행
+    branches: [ main ]                       # 18/argocd-cicd 브랜치에 푸시될 때만 실행
     paths:                                             # 아래 파일들이 변경된 경우에만 트리거됨
       - app.js
       - Dockerfile
