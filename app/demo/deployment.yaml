@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: demo                      # 컨테이너의 이름입니다
-          image: adapterz/k8s-pod:latest  # 사용할 컨테이너 이미지입니다 (Express 앱 기반)
+          image: kimwayne/k8s-argocd-test:latest
           ports:
             - containerPort: 3000         # 컨테이너에서 열 포트입니다 (Express 서버 리스닝 포트)
